@@ -1,0 +1,212 @@
+/* Instagram CSS */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 900px;
+    height: 100%; /* 調整高度 */
+    background-color: #f0f0f0; /* 背景顏色 */
+}
+
+.stories {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 20px; 
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100px; /* 調整寬度 */
+}
+
+.user_avatar {
+    border-radius: 50%;
+    width: 80px; 
+    height: 80px;
+    object-fit: cover;
+    margin: 0 auto; /* 確保照片水平居中 */
+    border: 3px solid #fff; /* 調整邊框顏色 */
+    aspect-ratio: 1; /* 確保照片為正方形 */
+    box-sizing: border-box;
+    } 
+    
+.user_avatar img {
+    border-radius: 50%; /* 確保內部圖片也為圓形 */
+    width: 100%; /* 填滿父容器 */
+    height: 100%; /* 填滿父容器 */
+    display: block;
+    object-fit: cover; /* 確保圖片內容不變形 */
+    background: #fff; /* 確保內部有白色背景 */
+    aspect-ratio: 1; /* 確保照片為正方形 */
+}
+    
+.user_name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 4px; /* 調整上方間距 */
+    color: #333; /* 調整文字顏色 */
+}
+
+
+.user_status {
+    padding: 3px;
+    background: linear-gradient(to right, #8f41e9, #578aef);
+}
+
+.arrow {
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.fixed-sidebar {
+    position: sticky; /* Make it sticky */
+    top: 0;           /* Stick to the top */
+    height: 100vh;    /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scroll *within* the sidebar if content overflows */
+    background-color: #f8f9fa; /* Example background */
+
+    padding: 2rem;
+   } /* Optional padding */
+
+
+.nav-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px;
+    font-size: 16px; /* Font size */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+     
+    cursor: pointer; /* Pointer cursor on hover */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: 100%; /* Full width of the sidebar */
+    height: 50px; /* Fixed height for each item */
+
+    background-color: #f8f9fa; /* Default background color */
+    border: 1px solid transparent; /* Default border */  
+    border-color: #333;   
+
+    font-weight: 900; /* Thicker bold text */
+
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-style: normal; /* Normal font style */
+    font-variant: normal; /* Normal font variant */
+    font-weight: 400; /* Normal font weight */
+    font-size: 16px; /* Font size */
+    line-height: 32px; /* Line height */
+    letter-spacing: 0.5px; /* Letter spacing */
+
+    text-decoration: none; /* No underline on links */
+    text-transform: none; /* No text transformation */
+    text-indent: 0; /* No text indentation */
+    text-shadow: none; /* No text shadow */
+    text-overflow: ellipsis; /* Ellipsis for overflowed text */
+    text-wrap: nowrap; /* Normal text wrapping */
+   }
+
+   .bi {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+   }
+
+   nav-link{
+    color: #333;
+   }
+
+   .posts-container {
+    max-width: 400px; /* 控制貼文的最大寬度 */
+    margin: 0 auto; /* 讓貼文居中 */
+    padding: 20px 0; /* 上下內邊距 */
+}
+
+.card {
+    border: none; /* 移除邊框 */
+    border-radius: 8px; /* 圓角 */
+    background-color: #f8f9fa; /* 背景色 */
+}
+
+.card-header {
+    background-color: transparent; /* 移除標題背景色 */
+    border-bottom: none; /* 移除底部邊框 */
+}
+
+.card-img-top {
+    border-radius: 0; /* 圖片不需要額外圓角 */
+}
+
+.card-body {
+    padding: 15px; /* 控制內邊距 */
+}
+
+.card-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+}
+
+.recommendation {
+    border: #333 solid 1px;
+}
+
+.middle {
+    border: #333 solid 1px;
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: top;
+    flex-direction: row;
+    height: 100%; /* 調整高度 */
+    background-color: #f0f0f0; /* 背景顏色 */
+}
+
+.recommend-friend img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* 圓形頭像 */
+    object-fit: cover;
+}
+
+.retitle{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+
+
+    color: #333; /* 調整文字顏色 */
+}
