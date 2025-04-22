@@ -9,44 +9,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>Instagram</title>
   </head>
 
   <body>
 
     <div class="row">
 
-      <div class="col-md-2 fixed-sidebar justify-content-center ">
-        <div class="sidebar bg-light border-end border-1 border-light">
+      <div class="col-md-2 fixed-sidebar">
+        <div class="sidebar">
 
             <div class="sidebar__header text-center py-3">
-              <h2>Instagram</h2>
+              <h2 style="font-family: 'Pacifico', cursive;">Instagram</h2>
             </div>
 
-            <ul class="nav flex-column justify-content-center">
-              <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="bi bi-house-door"></i> 首頁</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-search"></i> 搜尋</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-compass"></i> 探索</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-chat"></i> 訊息</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-bell"></i> 通知</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-person"></i> 個人資料</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-gear"></i> 設定</a>
-              </li>
-            </ul>
+            <div class="nav flex-column justify-content-center gap-2">
+              <button class="btn btn-outline-secondary nav-link"><i class="bi bi-house-door"></i> 首頁</button>
+              <button class="btn btn-outline-primary nav-link"><i class="bi bi-search"></i> 搜尋</button>
+              <button class="btn btn-outline-primary nav-link"><i class="bi bi-compass"></i> 探索</button>
+              <button class="btn btn-outline-primary nav-link"><i class="bi bi-chat"></i> 訊息</button>
+              <button class="btn btn-outline-primary nav-link"><i class="bi bi-bell"></i> 通知</button>
+              <button class="btn btn-outline-primary nav-link"><i class="bi bi-person"></i> 個人資料</button>
+              <button class="btn btn-outline-primary nav-link"><i class="bi bi-gear"></i> 設定</button>
+            </div>
 
         </div>
       </div>
@@ -57,7 +44,7 @@
       
         <div class="container-fluid bg-white py-3 col-md-10 ms-sm-auto"> 
 
-          <div class="middle col-md-6">
+          <div class="middle col-md-6 gap-3">
 
             <div class="stories flex-nowrap gap-2 overflow-x-auto">
               <div class="user d-inline-block text-center mx-1 align-top">
@@ -118,20 +105,35 @@
             </div>
 
             <div class="posts">
-              <div class="card">
+              <div class="card post">
                 <div class="card-header d-flex align-items-center">
                   <img src="https://images.unsplash.com/photo-1745061366260-7649ce279e08?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile" class="rounded-circle me-2" style="width: 40px; height: 40px;">
                   <div>
-                    <span class="fw-bold">陳芃屹</span><br>
+                    <span class="fw-bold">cpy1126</span><br>
                     <small class="text-muted">1 小時</small>
                   </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1743976955438-8f4743e06f8d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Post Image">
-                <div class="card-body">
-                  <p class="card-text">這是推文的內容，可以放一些描述文字。</p>
+
+                <img src="https://images.unsplash.com/photo-1743976955438-8f4743e06f8d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top post-image" alt="Post Image" >
+                
+                <div class="card-body d-flex flex-column">
+
+                  <div class="d-flex align-items-center gap-3 actionbar pb-3">
+                    <button class="btn action btn-outline-primary btn-sm  justify-content-center"><i class="bi bi-heart"></i></button>
+                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-chat"></i></button>
+                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-share"></i></button>
+                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-save"></i></button>
+                  </div>
+
+                  <p class="card-text thumb">101 個讚</p>
+                  <p class="card-text post-text">cpy1126 The New Yorker</p>
+                  <p class="card-text">查看全部10則留言</p>
+                  <p class="card-text">留言.....</p>
+
+
                   <div class="d-flex justify-content-between">
-                      <button class="btn btn-outline-primary btn-sm">喜歡</button>
-                      <button class="btn btn-outline-secondary btn-sm">分享</button>
+                      
+
                   </div>
                 </div>
               </div>
@@ -144,7 +146,7 @@
               <div class="card-body d-flex align-items-center">
                   <img src="https://images.unsplash.com/photo-1745061366260-7649ce279e08?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Image" class="rounded-circle me-3">
                   <div class="user_info flex-grow-1">
-                      <span class="user_name d-block fw-bold">shen_yi_0203</span>
+                      <span class="user_name d-block fw-bold">cpy1126</span>
                       <small class="text-muted">陳芃屹</small>
                   </div>
                   <button class="btn btn-primary btn-sm">切換</button>
@@ -157,9 +159,9 @@
             </div>
             
         
-            <div class="user_list flex-column gap-3">
+            <div class="user_list flex-column gap-1">
                 <!-- 用戶卡片 1 -->
-                <div class="card recommend-friend mb-3">
+                <div class="card recommend-friend ">
                     <div class="card-body d-flex align-items-center">
                         <img src="https://images.unsplash.com/photo-1744179211676-f0536705fcd3?q=80&w=2501&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Image" class="rounded-circle me-3">
                         <div class="user_info flex-grow-1">
@@ -171,7 +173,7 @@
                 </div>
         
                 <!-- 用戶卡片 2 -->
-                <div class="card recommend-friend mb-3">
+                <div class="card recommend-friend ">
                     <div class="card-body d-flex align-items-center">
                         <img src="https://images.unsplash.com/photo-1744690176525-c66d9fa342f9?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1MHx8fGVufDB8fHx8fA%3D%3D" alt="User Image" class="rounded-circle me-3">
                         <div class="user_info flex-grow-1">
@@ -181,10 +183,34 @@
                         <button class="btn btn-primary btn-sm">追蹤</button>
                     </div>
                 </div>
+
+                <div class="card recommend-friend ">
+                  <div class="card-body d-flex align-items-center">
+                      <img src="https://images.unsplash.com/photo-1744140390489-fc279d403107?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Image" class="rounded-circle me-3">
+                      <div class="user_info flex-grow-1">
+                          <span class="user_name d-block fw-bold">1.nnyu</span>
+                          <small class="text-muted">n.o.l_a.n 和另外 9 人在追蹤</small>
+                      </div>
+                      <button class="btn btn-primary btn-sm">追蹤</button>
+                  </div>
+                </div>
+
+                <div class="card recommend-friend ">
+                  <div class="card-body d-flex align-items-center">
+                      <img src="https://images.unsplash.com/photo-1744059510494-3e071c0b3596?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Image" class="rounded-circle me-3">
+                      <div class="user_info flex-grow-1">
+                          <span class="user_name d-block fw-bold">cy1snn</span>
+                          <small class="text-muted">n.o.l_a.n 和另外 13 人在追蹤</small>
+                      </div>
+                      <button class="btn btn-primary btn-sm">追蹤</button>
+                  </div>
+                </div>
+
             </div>
           </div>
           
         </div>
+        
     </div>
     
 
