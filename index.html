@@ -8,8 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="ig.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <title>Instagram</title>
   </head>
@@ -26,13 +27,13 @@
             </div>
 
             <div class="nav flex-column justify-content-center gap-2">
-              <button class="btn btn-outline-secondary nav-link"><i class="bi bi-house-door"></i> 首頁</button>
-              <button class="btn btn-outline-primary nav-link"><i class="bi bi-search"></i> 搜尋</button>
-              <button class="btn btn-outline-primary nav-link"><i class="bi bi-compass"></i> 探索</button>
-              <button class="btn btn-outline-primary nav-link"><i class="bi bi-chat"></i> 訊息</button>
-              <button class="btn btn-outline-primary nav-link"><i class="bi bi-bell"></i> 通知</button>
-              <button class="btn btn-outline-primary nav-link"><i class="bi bi-person"></i> 個人資料</button>
-              <button class="btn btn-outline-primary nav-link"><i class="bi bi-gear"></i> 設定</button>
+              <button class="btn"><span class="material-icons-outlined">home</span> 首頁</button>
+              <button class="btn"><span class="material-icons-outlined">search</span> 搜尋</button>
+              <button class="btn"><span class="material-icons-outlined">explore</span> 探索</button>
+              <button class="btn"><span class="material-icons-outlined">chat</span> 訊息</button>
+              <button class="btn"><span class="material-icons-outlined">notifications</span> 通知</button>
+              <button class="btn"><span class="material-icons-outlined">person</span> 個人資料</button>
+              <button class="btn"><span class="material-icons-outlined">settings</span> 設定</button>
             </div>
 
         </div>
@@ -105,41 +106,34 @@
             </div>
 
             <div class="posts">
+
               <div class="card post">
-                <div class="card-header d-flex align-items-center">
+                <div class="card-header d-flex align-items-center pb-0">
                   <img src="https://images.unsplash.com/photo-1745061366260-7649ce279e08?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile" class="rounded-circle me-2" style="width: 40px; height: 40px;">
                   <div>
                     <span class="fw-bold">cpy1126</span><br>
                     <small class="text-muted">1 小時</small>
                   </div>
                 </div>
-
-                <img src="https://images.unsplash.com/photo-1743976955438-8f4743e06f8d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top post-image" alt="Post Image" >
-                
-                <div class="card-body d-flex flex-column">
-
-                  <div class="d-flex align-items-center gap-3 actionbar pb-3">
-                    <button class="btn action btn-outline-primary btn-sm  justify-content-center"><i class="bi bi-heart"></i></button>
-                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-chat"></i></button>
-                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-share"></i></button>
-                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-save"></i></button>
+                <div class="card-body d-flex flex-column gap-1">
+                  <img src="https://images.unsplash.com/photo-1743976955438-8f4743e06f8d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top post-image" alt="Post Image" >
+                  <div class="actionbar d-flex align-items-center gap-1 pb-2">
+                    <button class="btn"><span class="material-icons-outlined">favorite_border</span></button>
+                    <button class="btn"><span class="material-icons-outlined">chat_bubble_outline</span></button>
+                    <button class="btn"><span class="material-icons-outlined">share</span></button>
+                    <button class="btn"><span class="material-icons-outlined">bookmark_border</span></button>
                   </div>
-
                   <p class="card-text thumb">101 個讚</p>
-                  <p class="card-text post-text">cpy1126 The New Yorker</p>
+                  <p class="card-text post-text">cpy1126 The New Yorker.</p>
                   <p class="card-text">查看全部10則留言</p>
                   <p class="card-text">留言.....</p>
-
-
-                  <div class="d-flex justify-content-between">
-                      
-
-                  </div>
                 </div>
+
               </div>
 
               <div class="card post">
-                <div class="card-header d-flex align-items-center">
+
+                <div class="card-header d-flex align-items-center pb-0">
                   <img src="https://images.unsplash.com/photo-1745061366260-7649ce279e08?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile" class="rounded-circle me-2" style="width: 40px; height: 40px;">
                   <div>
                     <span class="fw-bold">cpy1126</span><br>
@@ -147,28 +141,20 @@
                   </div>
                 </div>
 
-                <img src="https://images.unsplash.com/photo-1742836531206-bd4ec784e893?q=80&w=2634&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top post-image" alt="Post Image" >
-                
-                <div class="card-body d-flex flex-column">
-
-                  <div class="d-flex align-items-center gap-3 actionbar pb-3">
-                    <button class="btn action btn-outline-primary btn-sm  justify-content-center"><i class="bi bi-heart"></i></button>
-                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-chat"></i></button>
-                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-share"></i></button>
-                    <button class="btn action btn-outline-secondary btn-sm  justify-content-center"><i class="bi bi-save"></i></button>
+                <div class="card-body d-flex flex-column gap-1">
+                  <img src="https://images.unsplash.com/photo-1742836531206-bd4ec784e893?q=80&w=2634&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top post-image" alt="Post Image" >
+                  <div class="d-flex align-items-center gap-1 pb-2 actionbar">
+                    <button class="btn"><span class="material-icons-outlined">favorite_border</span></button>
+                    <button class="btn"><span class="material-icons-outlined">chat_bubble_outline</span></button>
+                    <button class="btn"><span class="material-icons-outlined">share</span></button>
+                    <button class="btn"><span class="material-icons-outlined">bookmark_border</span></button>
                   </div>
-
                   <p class="card-text thumb">150 個讚</p>
                   <p class="card-text post-text">cpy1126 Lovely afternoon.</p>
                   <p class="card-text">查看全部15則留言</p>
                   <p class="card-text">留言.....</p>
-
-
-                  <div class="d-flex justify-content-between">
-                      
-
-                  </div>
                 </div>
+
               </div>
             </div>
           </div>
